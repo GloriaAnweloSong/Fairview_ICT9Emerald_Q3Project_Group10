@@ -10,22 +10,68 @@
         <style>
 
         body{
-            background-image: url('https://i.pinimg.com/1200x/0e/f0/ee/0ef0ee79c095e11e78c48466baae5403.jpg') ;
+            background-color: #f9efce ;
+            background-image: url('#') ;
             background-size:cover;
             background-repeat: no-repeat;
             }
 
         .nav-img{
-        height: 50px;
-        width: 40px;
+            height: 50px;
+            width: 50px;
         }
 
-        .sec-img{
-          height: 200px;
-          width: auto;
+        .navbar-full{
+            background-color: #68c9d2;
+        }
+
+        .navbar-inner{
+            background-color: 	#f9efce;
+            padding: 10px 10px;
+            border-radius: 20px;
+        }
+
+        .navbar-nav{
+            gap: 10px;
         }
         
+        .nav-link{
+            font-weight: 600;
+        }
+
+        .nav-link.pressed{
+            background-color: #361f0f;
+            border-radius: 15px;
+            color: 	#fffdf5;
+            padding: 8px 15px;
+            font-weight: bold;
+        }
+
+        .btn{
+            border-radius: 10px;
+            font-weight: 600;
+        }
+            
+
+        .int-img{
+            height: 150px;
+            width: auto;
+        }
         
+        .sec-img{
+            height: 300px;
+            width: auto;
+        }
+
+        .fare-bg{
+            background-color: #bfbfbf ;
+            background-image: url('#') ;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
+
+
         </style>
         
 
@@ -35,40 +81,47 @@
 
 <!--navbar------------------------------------------------------------------------->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+<nav class="navbar navbar-expand-lg navbar-full py-3"> <!--Blue Navbar-->
   <div class="container">
 
-    <a class="navbar-brand fw-bold" href="#" style="color: aliceblue;">
-    <img src="elift.png" alt="" class="me-3 nav-img">elift</a>
+    <div class="navbar-inner w-100 align-items-center d-flex"> <!--Cream Navbar inside Blue Navbar-->
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button> 
+        <a class="navbar-brand fw-bold" href="#" style="color: #361f0f;">
+        <img src="elift.png" class="me-2 nav-img">PH</a>
 
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Fare Matrix</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Help</a>
-        </li>
-      </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button> 
 
-      <form class="d-flex">
-        <a class="btn btn-info me-4 active" href="registration.html">Create Account</a> <!--info for account creation page (cause it's no longer pressed)-->
-      </form>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link pressed" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fare">Fare Matrix</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+            </ul>
 
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-warning" type="button">Search</button>
-      </form>
+        <form class="d-flex">
+            <a class="btn me-4 active" href="#">Log In</a> <!--info for account creation page (cause it's no longer pressed)-->
+        </form>
+
+        <form class="d-flex">
+            <a class="btn btn-info me-4 active" href="confirmation.html">Create Account</a> <!--info for account creation page (cause it's no longer pressed)-->
+        </form>
+
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-warning" type="button">Search</button>
+        </form>
+
     </div>
   </div>
 </nav> 
@@ -76,27 +129,57 @@
 
 <!--end of navbar------------------------------------------------------------------------->
 
-<!-------------Header--------------------------------------------------------------------------------------------------------->
+<!-------------Introduction to Elift--------------------------------------------------------------------------------------------------------->
+    <section class="container my-5">
 
-<section>
-  <div class="container mt-3 bg-primary text-center py-4">
-    <img src="elift.png" alt="" class="me-3 sec-img">
-      <p>Your one and only reliable fare guide for the Philippines!</p> <!--short intro description-->
-  </div>
-</section>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+
+                <h1 class="fw-bold mb-3">Introducing <img src="elift.png" class="int-img"></h1> <!--Introducing Elift.png-->
+
+                <h4 style="font-weight: 600;">Your reliable and easy-to-use fare guide
+                                            <br> for your fare services across the Philippines.</h4>
+                                                                                                <br>
+
+                    <div class="mt-3">
+                            <a href="confirmation.html" class="btn btn-info btn-lg me-3">Get Started - Create Account!</a>
+                            <a href="#fare" class="btn btn-warning btn-lg me-3">Try It Out!</a>
+                    </div>
+
+                
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+
+<!-------------Some Images and About Me--------------------------------------------------------------------------------------------------------->
+
+        <section>
+            <div class="container-fluid my-5 bg-white text-center py-3 rounded shadow">
+
+                <div class="row justify-content-center align-items-center">
+                    <img src="elift.png" class="mx-auto d-block sec-img">
+                    <img src="elift.png" class="mx-auto d-block sec-img">
+                    <img src="elift.png" class="mx-auto d-block sec-img">
+                </div>
+
+                <h3 class="fw-bold mb-3">About Us</h3>
+                <h6 style="font-weight: 600;">Elift helps Filipinos around the world...</h6>
+            </div>
+        </section>
 
 
-<br>
 
-<!----------Manila Metro Rail Transit ----------------------------------------------------------------------------------------------------------->
-
-<div class="card mt-3 text-center py-4 w-50 mx-auto">
-    <div class="card-body">
-        <img src="elift.png" alt="" class="me-3 sec-img">
-        <h3 class="fw-bold">Manila Metro Rail Transit</h3>
-        <p>Your one and only reliable fare guide for the Philippines!
-        <br>(Elift is only available for specific locations)
-        </p> <!--short intro description-->
+<!----------Manila Metro Rail Transit (sorta Form?)----------------------------------------------------------------------------------------------------------->
+<section class="fare-bg py-3">
+    <div class="card mt-3 text-center py-4 w-50 mx-auto" id="fare">
+        <div class="card-body">
+            <img src="elift.png" class="me-3 int-img">
+            <h3 class="fw-bold">Welcome to <span style="color:#68c9d2;">Fare Matrix</span></h3>
+            <p style="font-weight: 450;">Where we can estimate all your fares to guide you in the Philippines!
+            <br><span style="background: #fffaed;">(Elift is only available for specific locations at least for now)</span>
+            </p> <!--short intro description-->
 
         <br>
 
@@ -127,18 +210,19 @@
 
             <div class="text-center">
 
-                <button id="Regular" name="Regular" type="button" style="border-radius: 10px; background-color: rgb(255, 255, 255); font-size: 20px; color: rgb(0, 0, 0);" class="btn" onclick="calculateFare('regular')">Submit</button>
+                <button id="Regular" name="Regular" type="button" class="btn btn-success" onclick="calculateFare('regular')">Submit</button>
 
-                <button id="discount" name="discount" type="button" style="border-radius: 10px; background-color: rgb(255, 255, 255); font-size: 20px; color: rgb(0, 0, 0);" class="btn" onclick="calculateFare('discount')">Discounted</button>
+                <button id="discount" name="discount" type="button" class="btn btn-success" onclick="calculateFare('discount')">Discounted</button>
 
                 <div class="alert alert-success mt-3">
                     <div id="Output"></div>
                 </div>
             </div>
 
+        </div>
     </div>
-</div>
-<br>
+</section>
+<br><br>
 
 <!----------------------------------------------------------------------------------------------------------------->
 
@@ -182,12 +266,11 @@ function calculateFare(type) {
 
 <!----------------------------------------------------------------------------------------------------------------->
 
-    <footer class="bg-dark text-white text-center py-3">
-      <div class="container">
-        <p>Gloria, Velasco | 9-Emerald, © 25/26</p>
+    <footer class="navbar-full text-white fw-bold text-center py-3">
+      <div class="container navbar-inner">
+        <p style="color: #361f0f;">Gloria, Velasco | 9-Emerald, © 25/26</p>
       </div>
     </footer>
 
 </body>
 </html>
-
